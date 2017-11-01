@@ -1,8 +1,8 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
 
-export default createWidget('toxu-items', {
-  buildKey: (attrs) => 'home-toxu',
+export default createWidget('banner-head', {
+  buildKey: (attrs) => 'home-banner',
 
   html(attrs, state) {
     const { currentUser } = this;
@@ -12,9 +12,9 @@ export default createWidget('toxu-items', {
 contents.push(
 new RawHtml({ html: `<div>
 <div id="banner-content">
-
-test test test test test
-
+<br />
+<center>test test test test test</center>
+<br />
  </div>
 `})
  
